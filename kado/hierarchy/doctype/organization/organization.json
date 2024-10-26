@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{hierarchy_level_id}",
+ "creation": "2024-10-22 21:14:31.639636",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_a",
+  "lft",
+  "column_break_a",
+  "rgt",
+  "column_break_b",
+  "is_group",
+  "section_b",
+  "hierarchy_level",
+  "hierarchy_level_id",
+  "organization",
+  "parent_organization"
+ ],
+ "fields": [
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Group"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "parent_organization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Parent",
+   "options": "Organization"
+  },
+  {
+   "fieldname": "section_a",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_b",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hierarchy_level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Hierarchy Level",
+   "options": "Hierarchy Levels Definitions"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Organization",
+   "translatable": 1
+  },
+  {
+   "fetch_from": "hierarchy_level.name",
+   "fieldname": "hierarchy_level_id",
+   "fieldtype": "Read Only",
+   "hidden": 1,
+   "label": "Hierarchy Level ID"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2024-10-25 01:55:20.147264",
+ "modified_by": "Administrator",
+ "module": "Hierarchy",
+ "name": "Organization",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_organization",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "organization",
+ "translated_doctype": 1
+}

@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{###}",
+ "creation": "2024-10-15 19:30:37.589416",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "level_definition"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "level_definition",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Level Definition",
+   "translatable": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-23 00:23:25.951235",
+ "modified_by": "Administrator",
+ "module": "Hierarchy",
+ "name": "Hierarchy Levels Definitions",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "export": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Kady",
+   "select": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "level_definition",
+ "translated_doctype": 1
+}

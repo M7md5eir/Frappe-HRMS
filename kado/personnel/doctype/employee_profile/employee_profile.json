@@ -1,0 +1,323 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:{staff_num}",
+ "creation": "2024-10-08 22:41:27.431448",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_data_tab",
+  "section_break_ocdh",
+  "image_rcpc",
+  "column_break_nbjq",
+  "staff_num",
+  "column_break_bici",
+  "emp_image",
+  "column_break_dkmb",
+  "column_break_kibd",
+  "section_break_sbju",
+  "emp_full_name",
+  "link_psur",
+  "section_break_strg",
+  "1st_emp_name",
+  "column_break_uslx",
+  "2nd_emp_name",
+  "column_break_pdsp",
+  "3rd_emp_name",
+  "column_break_nimz",
+  "4th_emp_name",
+  "column_break_aklj",
+  "column_break_qaax",
+  "section_break_kwjg",
+  "birthdate",
+  "column_break_hacy",
+  "join_date",
+  "column_break_eaib",
+  "salutation",
+  "column_break_ucjk",
+  "marital_status",
+  "financial_data_tab",
+  "payment_details_section",
+  "currency",
+  "column_break_tule",
+  "emp_bank",
+  "emp_bank_account_number",
+  "column_break_hvdq",
+  "column_break_mavs",
+  "s",
+  "salary_items_section",
+  "basic_salary",
+  "allowances_section",
+  "table_vgjr",
+  "educational_qualification_tab",
+  "contract_tab",
+  "table_mbnt"
+ ],
+ "fields": [
+  {
+   "fieldname": "staff_num",
+   "fieldtype": "Data",
+   "label": "Staff Num",
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "1st_emp_name",
+   "fieldtype": "Data",
+   "label": "1st Name",
+   "translatable": 1
+  },
+  {
+   "fieldname": "2nd_emp_name",
+   "fieldtype": "Data",
+   "label": "2nd Name",
+   "translatable": 1
+  },
+  {
+   "fieldname": "3rd_emp_name",
+   "fieldtype": "Data",
+   "label": "3rd Name",
+   "translatable": 1
+  },
+  {
+   "fieldname": "4th_emp_name",
+   "fieldtype": "Data",
+   "label": "4th Name",
+   "translatable": 1
+  },
+  {
+   "fieldname": "column_break_uslx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_pdsp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_nimz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_aklj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_strg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qaax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_sbju",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 4,
+   "fieldname": "emp_full_name",
+   "fieldtype": "Data",
+   "translatable": 1
+  },
+  {
+   "fieldname": "emp_image",
+   "fieldtype": "Attach Image"
+  },
+  {
+   "fieldname": "image_rcpc",
+   "fieldtype": "Image",
+   "options": "emp_image"
+  },
+  {
+   "fieldname": "section_break_ocdh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_nbjq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bici",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dkmb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kibd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kwjg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "birthdate",
+   "fieldtype": "Date",
+   "label": "Birthdate"
+  },
+  {
+   "fieldname": "column_break_eaib",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ucjk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "financial_data_tab",
+   "fieldtype": "Tab Break",
+   "label": "Financial Data"
+  },
+  {
+   "fieldname": "basic_salary",
+   "fieldtype": "Int",
+   "label": "Basic Salary",
+   "precision": "2"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Currency",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "column_break_hacy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "basic_data_tab",
+   "fieldtype": "Tab Break",
+   "label": "Basic Data"
+  },
+  {
+   "fieldname": "salary_items_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.payment_type == 'Bank'",
+   "fieldname": "emp_bank",
+   "fieldtype": "Data",
+   "label": "Bank"
+  },
+  {
+   "fieldname": "column_break_tule",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hvdq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.payment_type == 'Bank Transfer'",
+   "fieldname": "emp_bank_account_number",
+   "fieldtype": "Int",
+   "label": "Bank Account Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "column_break_mavs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "s",
+   "fieldtype": "Link",
+   "options": "Payment Method"
+  },
+  {
+   "fieldname": "join_date",
+   "fieldtype": "Date",
+   "label": "Join Date"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Data",
+   "label": "Salutation"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Data",
+   "label": "Marital Status"
+  },
+  {
+   "fieldname": "educational_qualification_tab",
+   "fieldtype": "Tab Break",
+   "label": "Educational Qualification"
+  },
+  {
+   "fieldname": "allowances_section",
+   "fieldtype": "Section Break",
+   "label": "Allowances"
+  },
+  {
+   "fieldname": "link_psur",
+   "fieldtype": "Link",
+   "options": "Hierarchy"
+  },
+  {
+   "fieldname": "table_vgjr",
+   "fieldtype": "Table",
+   "options": "Salaries Elements Transactions"
+  },
+  {
+   "fieldname": "contract_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contract"
+  },
+  {
+   "fieldname": "table_mbnt",
+   "fieldtype": "Table",
+   "options": "Employment Contacts Transactions"
+  }
+ ],
+ "links": [],
+ "max_attachments": 1,
+ "modified": "2024-10-19 21:36:25.770449",
+ "modified_by": "Administrator",
+ "module": "Personnel",
+ "name": "Employee Profile",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Kady",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "staff_num",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "emp_full_name",
+ "translated_doctype": 1
+}

@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-18 19:48:27.494107",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "staff_num",
+  "column_break_jklu",
+  "column_break_afal",
+  "section_break_srcs",
+  "table_kzrn",
+  "section_break_mwio",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "staff_num",
+   "fieldtype": "Link",
+   "label": "Staff Num",
+   "options": "Employee Profile"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "AA",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_mwio",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_jklu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_afal",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_srcs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_kzrn",
+   "fieldtype": "Table",
+   "options": "Employment Contacts Transactions"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-19 21:11:06.189984",
+ "modified_by": "Administrator",
+ "module": "Personnel",
+ "name": "AA",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

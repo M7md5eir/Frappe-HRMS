@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "autoname": "format:{DD}{MM}{YYYY}-{######}",
+ "creation": "2024-10-13 22:27:11.114206",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "staff_num",
+  "column_break_uzap",
+  "allowance_type",
+  "column_break_kkiq",
+  "amount",
+  "column_break_nqhx",
+  "starting_date",
+  "section_break_taxr",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount",
+   "length": 2,
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_nqhx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "starting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Starting Date"
+  },
+  {
+   "fieldname": "column_break_kkiq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "allowance_type",
+   "fieldtype": "Data",
+   "label": "Allowance Type"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Salaries Elements Transactions",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "staff_num",
+   "fieldtype": "Link",
+   "label": "Staff Num",
+   "options": "Employee Profile"
+  },
+  {
+   "fieldname": "column_break_uzap",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_taxr",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-18 19:14:27.026891",
+ "modified_by": "Administrator",
+ "module": "Payroll",
+ "name": "Salaries Elements Transactions",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": []
+}

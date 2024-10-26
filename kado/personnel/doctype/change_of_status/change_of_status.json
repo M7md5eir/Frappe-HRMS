@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2024-10-13 19:12:18.814730",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "staff_number",
+  "column_break_ogsk",
+  "effective_date",
+  "column_break_sasi",
+  "section_break_atjx",
+  "a",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "staff_number",
+   "fieldtype": "Link",
+   "label": "Staff Number",
+   "options": "Employee Profile"
+  },
+  {
+   "fieldname": "a",
+   "fieldtype": "Table",
+   "options": "Change Of Status Transactions"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Change Of Status",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ogsk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "effective_date",
+   "fieldtype": "Date",
+   "label": "Effective Date"
+  },
+  {
+   "fieldname": "section_break_atjx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_sasi",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-19 21:01:51.304721",
+ "modified_by": "Administrator",
+ "module": "Personnel",
+ "name": "Change Of Status",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

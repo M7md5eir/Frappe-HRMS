@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:{######}",
+ "creation": "2024-10-18 19:20:37.714845",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "contract",
+  "column_break_lsoq",
+  "duration_by_months",
+  "column_break_dzqx",
+  "pronation_period"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_lsoq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "contract",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contract",
+   "translatable": 1
+  },
+  {
+   "fieldname": "column_break_dzqx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "pronation_period",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pronation Period ",
+   "non_negative": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "duration_by_months",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Duration By Months",
+   "non_negative": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-18 19:43:16.364126",
+ "modified_by": "Administrator",
+ "module": "Setup",
+ "name": "Employment Contract",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_title_field_in_link": 1,
+ "sort_field": "name",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "contract",
+ "translated_doctype": 1
+}

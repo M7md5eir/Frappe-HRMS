@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-19 21:07:34.699204",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "staff_number",
+  "column_break_ymza",
+  "column_break_bbas",
+  "section_break_ofgn",
+  "contract",
+  "column_break_nbic",
+  "start_date",
+  "column_break_awie",
+  "end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contract",
+   "options": "Employment Contract"
+  },
+  {
+   "fieldname": "column_break_nbic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_awie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End date"
+  },
+  {
+   "fieldname": "staff_number",
+   "fieldtype": "Link",
+   "label": "Staff Number",
+   "options": "Employee Profile"
+  },
+  {
+   "fieldname": "column_break_ymza",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bbas",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ofgn",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-19 21:39:50.554487",
+ "modified_by": "Administrator",
+ "module": "Personnel",
+ "name": "Employment Contacts Transactions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

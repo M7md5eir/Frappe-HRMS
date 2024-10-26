@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "creation": "2024-10-13 19:31:38.304188",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "field",
+  "column_break_ghjz",
+  "current",
+  "column_break_dgmc",
+  "new_value"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "new_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "New"
+  },
+  {
+   "fieldname": "column_break_ghjz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "field",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Field",
+   "unique": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "current",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Current"
+  },
+  {
+   "fieldname": "column_break_dgmc",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-10-13 20:57:51.058497",
+ "modified_by": "Administrator",
+ "module": "Personnel",
+ "name": "Change Of Status Transactions",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

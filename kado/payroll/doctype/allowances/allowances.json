@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{DD}{MM}{YYYY}-{######}",
+ "creation": "2024-10-13 22:15:31.992825",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "link_fqqe",
+  "column_break_mkem",
+  "column_break_gvjt",
+  "section_break_lapc",
+  "allowance_type",
+  "table_dqcq",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "allowance_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Allowance Type"
+  },
+  {
+   "fieldname": "column_break_mkem",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gvjt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lapc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_dqcq",
+   "fieldtype": "Table",
+   "options": "Salaries Elements Transactions"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Allowances",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "link_fqqe",
+   "fieldtype": "Link",
+   "options": "Employee Profile"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-10-16 16:12:57.287950",
+ "modified_by": "Administrator",
+ "module": "Payroll",
+ "name": "Allowances",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
